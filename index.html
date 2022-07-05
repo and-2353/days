@@ -3,14 +3,16 @@
     <head>
         <meta charset="utf-8">
         <title>今日から1週間</title>
+        <link rel="icon" href="./materials/calender.svg">
         <script type="text/javascript" src="script.js"></script>
     </head>
 
     <body>
         <p>コピー：<br>
-            <textarea id="text-area" name="comment" cols="40" rows="8"></textarea>
+            <textarea id="text-area" name="comment" cols="40" rows="20"></textarea>
             <button class="copy_clipboard">クリップボードにコピー</button>
         </p>
-        
+        <label>表示日数：<input type="text" id="day_num" size="10"></label>
+        <input type="button" value="変更" onclick="change_day_n()">
     </body>
 </html>
